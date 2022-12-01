@@ -5,8 +5,442 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн кинотеатр ИВИ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <!-- Header start -->
+        <div class="back-header"></div>
+        <header id="header">
+            <!-- Top menu start -->
+            <div class="navigation">
+                <div class="container navigation-top">
+                    <ul class="navigation-top-left">
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Карта офисов</a></li>
+                        <li><a href="#">Акции и новости</a></li>
+                        <li><a href="#">Смартфоны</a></li>
+                        <li><a href="#">Перейти в Beeline</a></li>
+                    </ul>
+                    <div class="navigation-top-right">
+                        <div class="language-picker">
+                            <button id="ru" value="ru" class="langauge-picker-btn selected-lang">Рус</button>
+                            <span>/</span>
+                            <button id="ky" value="ky" class="langauge-picker-btn">Кырг</button>
+                        </div>
+                        <div class="b2c-b2b-block">
+                            <a href="#" class="menu-b2b-link menu-b2b-link-active">Частным Лицам</a>
+                            <span>/</span>
+                            <a href="#" class="menu-b2b-link">Бизнесу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top menu end -->
+
+            <!-- Main menu start -->
+            <div class="navigation-main container">
+                <div class="navigation-main-leftside">
+                    <a href="#" class="desktop-logo"><img src="./images/bee-logo.svg" alt=""></a>
+                    <ul class="navbar">
+                        <li class="navbar-item"><a href="#">Тарифы</a></li>
+                        <li class="navbar-item"><a href="#">Услуги</a></li>
+                        <li class="navbar-item"><a href="#">Пополнение</a></li>
+                        <li class="navbar-item"><a href="#">О компании</a></li>
+                        <li class="navbar-item"><a href="#">Карьера в Beeline</a></li>
+                        <li class="navbar-item"><a href="#">Восстановление номера</a></li>
+                    </ul>
+                </div>
+                <div class="navigation-main-rightside">
+                    <div class="search-panel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8.25" stroke="#121212" stroke-width="1.5"></circle>
+                            <path d="M22 22L17.156 17.156" stroke="#121212" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="login-btn">
+                        <button>Войти</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Main menu end -->
+        </header>
+        <!-- Header end -->
+
+        <!-- Main content start -->
+        <main class="main-content">
+            <!-- Ivi banner start -->
+            <div class="ivi-landing">
+                <div class="ivi-banner container">
+                    <div class="ivi-banner__content">
+                        <h3 class="ivi-banner__title">Онлайн-кинотеатр ИВИ</h3>
+                        <p class="ivi-banner__subtitle">Более 100 000 фильмов и сериалов</p>
+                        <p class="ivi-banner__subtitle">с бесплатным трафиком на 5-ти устройствах</p>
+                        <div class="ivi-banner__btns">
+                            <a href="#" class="ivi-banner__freeBtn">Бесплатно на 14 дней</a>
+                            <div class="ivi-banner__connect">
+                                Как подключить?
+                                <img src="./images/play.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ivi-banner__img"></div>
+                </div>
+            </div>
+            <!-- Ivi banner end -->
+
+            <!-- Ivi tariffs start -->
+            <div class="ivi-tariffs container">
+                <h3 class="ivi-tariffs__title">Бесплатная и безлимитная подписка ИВИ навсегда* — в вашем тарифе!</h3>
+
+                <div class="ivi-tariffs__cards">
+                    <div class="tariff-card">
+                        <div class="tariff-card__part">
+                            <div class="tariff-card__top">
+                                <img src="./images/ivi_corn.png" alt="">
+                                <div class="tariff-card__content">
+                                    <h3 class="tariff-card__name">Бирге для интернета PRO + ИВИ</h3>
+                                    <div class="tariff-card__price">
+                                        <div class="tariff-card__nominal">
+                                            490
+                                            <span>c</span>
+                                        </div>
+                                        <span class="tariff-card__period">/ за 4 недели</span>
+                                    </div>
+                                </div>
+                            </div>
     
+                            <div class="tariff-card__desc">
+                                <p class="tariff-card__desc-title">
+                                    <span>Активируйте ИВИ в Мой Beeline</span>
+                                </p>
+
+                                <div class="tariff-card__desc-item">
+                                    40 ГБ
+                                    <span>интернета</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    15 ГБ
+                                    <span>на</span>
+                                    <img src="./images/ivi_logo.svg" alt="Ivi">
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    40 мин
+                                    <span>на звонки вне сети</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    Instagram, WhatsApp, Telegram
+                                    <span>бесплатный дополнительный трафик</span>
+                                </div>
+                                <div class="tariff-card__desc-item">
+                                    Безлимитные
+                                    <span>звонки и SMS внутри сети</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    8 ГБ
+                                    <span>на раздачу Wi-Fi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariff-card__bottom">
+                            <button class="main-connect-button">Подключить</button>
+                            <a href="" class="tariff-card__get-sim">Заказать SIM-карту</a>
+                        </div>
+                    </div>
+
+                    <div class="tariff-card">
+                        <div class="tariff-card__part">
+                            <div class="tariff-card__top">
+                                <img src="./images/ivi-icon.png" alt="">
+                                <div class="tariff-card__content">
+                                    <h3 class="tariff-card__name">Бирге Музыка + ИВИ</h3>
+                                    <div class="tariff-card__price">
+                                        <div class="tariff-card__nominal">
+                                            590
+                                            <span>c</span>
+                                        </div>
+                                        <span class="tariff-card__period">/ за 4 недели</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tariff-card__desc">
+                                <p class="tariff-card__desc-title">
+                                    <span>Активируйте ИВИ в Мой Beeline</span>
+                                </p>
+
+                                <div class="tariff-card__desc-item">
+                                    45 ГБ
+                                    <span>интернета</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    2 ГБ
+                                    <span>Музыкальный сервис Звук (Есть ограничение)</span>
+                                    <img src="./images/zvuk_svg.svg" alt="Ivi">
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    15 ГБ
+                                    <span>онлайн-кинотеатр ИВИ</span>
+                                    <img src="./images/ivi_logo.svg" alt="">
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    Безлимитный
+                                    <span>WhatsApp</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    45 мин
+                                    <span>Звонки вне сети</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    Безлимитные
+                                    <span>Звонки и SMS внутри сети</span>
+                                </div>
+
+                                <div class="tariff-card__desc-item">
+                                    10 ГБ
+                                    <span>На раздачу Wi-fi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariff-card__bottom">
+                            <button class="main-connect-button">Подключить</button>
+                            <a href="" class="tariff-card__get-sim">Заказать SIM-карту</a>
+                        </div>
+                    </div>
+
+                    <div class="tariff-card tariff-card__big">
+                        <div class="top-group">
+                            <div class="tariff-card__top">
+                                <img src="./images/ivi-cam.svg" alt="">
+                                <div class="tariff-card__content">
+                                    <h3 class="tariff-card__name">Подписка ИВИ еще на 30 дней бесплатно</h3>
+                                    <div class="tariff-card__price">
+                                        <div class="tariff-card__nominal">
+                                            200
+                                            <span>c</span>
+                                        </div>
+                                        <span class="tariff-card__period">/ 30 дней</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tariff-card__desc tariff-card__desc-big">
+                                <p class="tariff-card__desc-title">
+                                    <span>Активируйте ИВИ в Мой Beeline</span>
+                                </p>
+                                <div class="tariff-card__desc-item">
+                                    еще 30 дней бесплатной подписки онлайн-кинотеатра
+                                    <img src="./images/ivi_logo.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariff-card__bottom tariff-card__bottom-big">
+                            <button class="main-connect-button">Подключить</button>
+                            <a href="" class="tariff-card__get-sim get-sim-big">Заказать SIM-карту</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ivi tariffs end -->
+
+            <!-- Ivi mb start -->
+            <div class="ivi-mb">
+                <div class="container">
+                    <div class="ivi-mb-container">
+                        <div class="ivi-mb__download">
+                            <div class="ivi-mb__download-img">
+                                <img src="./images/iphone.png" alt="download-app-img">
+                            </div>
+    
+                            <div class="ivi-mb__download-right">
+                                <div class="ivi-mb__download-content">
+                                    <h3 class="ivi-mb__download-title">Скачивайте приложение Мой Beeline</h3>
+                                    <p class="ivi-mb__download-subtitle">и получайте неограниченный доступ к миру кино и сериалов!</p>
+                                </div>
+    
+                                <div class="ivi-mb__download-apps">
+                                    <a href="">
+                                        <img src="./images/app_store.svg" alt="download-from-app_store">
+                                    </a>
+                                    <a href="">
+                                        <img src="./images/google-play.svg" alt="download-from-google_play">
+                                    </a>
+                                </div>
+    
+                                <div class="ivi-mb__download-info">
+                                    Чтобы воспользоваться подпиской ИВИ, вам необходимо скачать приложение Мой Beeline. Затем нажать на кнопку ИВИ и безграничный мир кино и сериалов в ваших руках!
+                                </div>
+    
+                                <div class="ivi-mb__download-video">
+                                    <p>Как подключить ИВИ навсегда?</p>
+                                    <img src="./images/play.svg" alt="play">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul class="ivi-mb__advantages">
+                            <li class="ivi-mb__advantage">
+                                <img src="./images/present.svg" alt="present">
+                                <p>Всегда множество подарков и акций</p>
+                            </li>
+
+                            <li class="ivi-mb__advantage">
+                                <img src="./images/medal.svg" alt="present">
+                                <p>Награды за действия</p>
+                            </li>
+
+                            <li class="ivi-mb__advantage">
+                                <img src="./images/percent.svg" alt="present">
+                                <p>Скидочные и специальные предложения только для вас</p>
+                            </li>
+
+                            <li class="ivi-mb__advantage">
+                                <img src="./images/phone.svg" alt="present">
+                                <p>Простое и удобное управление своим номером и номерами близких</p>
+                            </li>
+
+                            <li class="ivi-mb__advantage">
+                                <img src="./images/help.svg" alt="present">
+                                <p>И связь с компанией Beeline в любое время</p>
+                            </li>
+                        </ul>
+
+                        <div class="ivi-mb__star">
+                            Просмотр кино и сериалов доступен на безлимитной основе. Интернет трафик тарифицируется согласно условий тарифного плана Бирге для интернета и Бирге для интрнета Pro. Под словом «навсегда» подразумевается бесплатный и безлимитный доступ к подписке онлайн-кинотеатра ИВИ при выполнении всех условий тарифных планов Бирге для Интернета и Бирге для Интернета PRO в период существования указанных тарифов. Пользовательское соглашение Сервиса ИВИ.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ivi mb end -->
+        </main>
+
+        <!-- Footer start -->
+        <footer class="footer">
+            <section class="footer-menu container">
+                <ul class="footer-list">
+                    <li>Частным лицам</li>
+                    <li><a href="#">Перейти в Beeline</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Акции и новости</a></li>
+                    <li><a href="#">Роуминг и звонки зарубеж</a></li>
+                    <li><a href="#">Пополнение</a></li>
+                    <li><a href="#">О компании</a></li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>Бизнес</li>
+                    <li><a href="#">Стать корпоративным клиентом</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>Компания</li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Корпоративная ответственность</a></li>
+                    <li><a href="#">Работа в Beeline</a></li>
+                    <li><a href="#">Стажировка в Beeline</a></li>
+                    <li><a href="#">Кодекс поведения БП</a></li>
+                    <li><a href="#">Новости компании</a></li>
+                    <li><a href="#">Закупки</a></li>
+                    <li><a href="#">Правовая информация</a></li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>Поддержка</li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Настройки интернета</a></li>
+                    <li><a href="#">Офисы</a></li>
+                    <li><a href="#">Видеоуроки Beeline</a></li>
+                    <li><a href="#">Оставить заявку</a></li>
+                    <li><a href="#">Полезные документы и файлы</a></li>
+                    <li><a href="#">Отправка SMS</a></li>
+                    <li><a href="#">WhatsApp-чат</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-social container">
+                <div class="footer-social__icons">
+                    <a href="#"><img src="./images/social/ic_insta.svg" alt="instagram"></a>
+                    <a href="#"><img src="./images/social/tiktok.svg" alt="tiktok"></a>
+                    <a href="#"><img src="./images/social/ic_yotube.svg" alt="youtubr"></a>
+                    <a href="#"><img src="./images/social/ic_vk.svg" alt="vkontakte"></a>
+                    <a href="#"><img src="./images/social/ic_tvit.svg" alt="twitter"></a>
+                    <a href="#"><img src="./images/social/wa.svg" alt="whatsapp"></a>
+                    <a href="#"><img src="./images/social/ic_fb.svg" alt="facebook"></a>
+                </div>
+
+                <div class="footer-social__support">
+                    <div class="support-mail">
+                        <a href="#">
+                            <img src="./images/ms-footer-mail.svg" alt="mail">
+                            <span>answer@beeline.kg</span>
+                        </a>
+                    </div>
+
+                    <div class="support-phone">
+                        <a href="#">
+                            <img src="./images/ms-footer-phone.svg" alt="phone">
+                            <span>*611 справочная</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-phone">
+                    <a href="#">Для операторов других сетей +996 (775) 58 0611</a>
+                </div>
+            </section>
+
+            <div class="footer-bottom container">
+                <div class="footer-bottom-group">
+                    <a href="#" class="footer-bottom__logo">
+                        <img src="./images/beeline_logo.svg" alt="Beeline">
+                    </a>
+    
+                    <div class="footer-bottom__copyright">
+                        © Beeline, 2022
+                    </div>
+    
+                    <div class="footer-bottom__stores">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                <path class="stores-icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.756938 24C0.298007 23.8853 0 23.4636 0 22.808V1.16521C0 0.557273 0.253306 0.147514 0.652635 0L12.0812 12.0603L0.756938 24ZM2.33042 23.5411L16.0864 16.2846L12.7353 12.7502L2.33042 23.5411ZM16.1803 7.73775L2.6165 0.581114L12.7547 11.3496L16.1818 7.73775H16.1803ZM17.1011 8.22351L22.4146 11.0248C23.4204 11.5567 23.4293 12.412 22.4146 12.9469L16.967 15.8227L13.4133 12.0469L17.1011 8.22351Z" fill="#7D858E"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="stores-icon" fill-rule="evenodd" clip-rule="evenodd" d="M15.7689 5.35939C18.6591 5.35939 20.508 8.05015 20.508 8.05015C20.508 8.05015 17.688 9.52154 17.688 12.7191C17.688 16.5129 21.2308 17.6169 21.2308 17.6169C21.2308 17.6169 18.4338 24 15.2954 24C13.5305 24 13.4123 23.0225 11.0649 23.0225C9.02862 23.0225 8.34185 24 6.78831 24C3.82708 24 0 17.7785 0 12.7191C0 7.46308 3.87415 5.35939 6.30369 5.35939C8.43508 5.35939 9.324 6.56585 11.0418 6.56585C12.4865 6.56585 13.6246 5.35939 15.7689 5.35939ZM15.2705 0C15.6969 2.57538 13.2683 5.76092 10.3662 5.65754C9.93969 2.37969 13.0671 0.171692 15.2705 0Z" fill="#7D858E"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <div class="online-support">
+        <a href=""><img src="./images/online-support.svg" alt="online-support"></a>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
