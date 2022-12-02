@@ -12,6 +12,135 @@
 </head>
 <body>
     <div class="wrapper">
+
+        <div class="mobile-menu menu-hidden">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__header">
+                    <div class="close-menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#909090" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6 6L18 18" stroke="#909090" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="language-picker">
+                        <button id="ru" value="ru" class="langauge-picker-btn">Рус</button>
+                        <span>/</span>
+                        <button id="ky" value="ky" class="langauge-picker-btn">Кырг</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu__titles mb-container">
+                    <a href="#">Частным лицам</a>
+                    <a href="#">Бизнесу</a>
+                </div>
+                
+                <div class="mobile-menu__search mb-container">
+                    <div class="mb-search-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8.25" stroke="#909090" stroke-width="1.5"></circle> <path d="M22 22.0002L17.156 17.1562" stroke="#909090" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    </div>
+                    <input type="text" placeholder="Поиск по сайту">
+                    <div class="mb-search-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#909090" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6 6L18 18" stroke="#909090" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>  
+            </div>
+
+            <ul class="mobile-menu__items mb-container">
+                <li class="mobile-menu__item">
+                    <a href="">Помощь</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Карта офисов</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Акции и новости</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Смартфоны</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <div class="mobile-menu__item-show">
+                        <a href="">Перейти в Beeline</a>
+                        <img class="mobile-menu__item-img" src="./images/chevron-right-grey.svg" alt="">
+                    </div>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Тарифы</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <div class="mobile-menu__item-show">
+                        <a href="">Услуги</a>
+                        <img class="mobile-menu__item-img" src="./images/chevron-right-grey.svg" alt="">
+                    </div>
+
+                    <ul class="mobile-sub-menu__items">
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Все услуги</a>
+                        </li>
+
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Beeline Бонус</a>
+                        </li>
+
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Для интернета</a>
+                        </li>
+
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Роуминг и звонки зарубеж</a>
+                        </li>
+
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Развлечения</a>
+                        </li>
+
+                        <li class="mobile-sub-menu__item">
+                            <a href="">Раздача интернета</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Пополнение</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">О компании</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Карьера в Beeline</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                    <a href="">Восстановление номера</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <ul class="mobile-menu__help">
+                    <li class="mobile-menu__help-item">
+                        <a href="">Помощь</a>
+                    </li>
+    
+                    <li class="mobile-menu__help-item">
+                        <a href="">Офисы и терминалы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
         <!-- Header start -->
         <div class="back-header"></div>
         <header id="header">
@@ -43,6 +172,12 @@
 
             <!-- Main menu start -->
             <div class="navigation-main container">
+                <div class="burger-menu">
+                    <div class="burger-menu__img">
+                        <img src="./images/ic_menu-burger.svg" alt="Beeline">
+                    </div>
+                </div>
+
                 <div class="navigation-main-leftside">
                     <a href="#" class="desktop-logo"><img src="./images/bee-logo.svg" alt=""></a>
                     <ul class="navbar">
